@@ -11,6 +11,8 @@ export type Property = {
   neighborhood: string;
   bedrooms: number;
   bathrooms: number;
+  stories?: number;
+  garage?: number; // number of car spaces
   area: number; // sqm
   lat: number;
   lng: number;
@@ -35,6 +37,8 @@ export const properties: Property[] = [
     neighborhood: "Al Olaya",
     bedrooms: 5,
     bathrooms: 6,
+    stories: 2,
+    garage: 3,
     area: 650,
     lat: 24.6877,
     lng: 46.6921,
@@ -60,6 +64,8 @@ export const properties: Property[] = [
     neighborhood: "Dubai Marina",
     bedrooms: 2,
     bathrooms: 2,
+    stories: 1,
+    garage: 1,
     area: 140,
     lat: 25.0805,
     lng: 55.1403,
@@ -85,6 +91,8 @@ export const properties: Property[] = [
     neighborhood: "Al Corniche",
     bedrooms: 4,
     bathrooms: 5,
+    stories: 2,
+    garage: 2,
     area: 480,
     lat: 21.5433,
     lng: 39.1728,
@@ -134,6 +142,8 @@ export const properties: Property[] = [
     neighborhood: "Al Corniche",
     bedrooms: 3,
     bathrooms: 3,
+    stories: 1,
+    garage: 2,
     area: 280,
     lat: 26.2794,
     lng: 50.2083,
@@ -158,6 +168,8 @@ export const properties: Property[] = [
     neighborhood: "Downtown Dubai",
     bedrooms: 4,
     bathrooms: 5,
+    stories: 1,
+    garage: 2,
     area: 520,
     lat: 25.1972,
     lng: 55.2744,

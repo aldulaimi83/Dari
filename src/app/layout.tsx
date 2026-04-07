@@ -16,8 +16,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-full flex flex-col bg-gray-50 text-gray-900">
         <Navbar />
         <main className="flex-1">{children}</main>
-        <footer className="bg-white border-t py-6 text-center text-sm text-gray-500">
-          © 2026 Dari · داري — Gulf Real Estate
+        <footer className="bg-white border-t py-8 text-sm text-gray-500">
+          <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p>© 2026 Dari · داري — Gulf Real Estate</p>
+            <div className="flex items-center gap-6">
+              <a href="/properties" className="hover:text-emerald-600 transition-colors">Listings</a>
+              <a href="/list" className="hover:text-emerald-600 transition-colors">List Property</a>
+              <a href="/contact" className="hover:text-emerald-600 transition-colors">Contact Us</a>
+              <a href="https://youooo.com" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-600 transition-colors">Youooo</a>
+            </div>
+          </div>
         </footer>
       </body>
     </html>
