@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -10,12 +9,9 @@ export default function Navbar() {
     <nav className="bg-white border-b shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3">
-          <Image src="/youooo_logo.png" alt="Youooo" width={80} height={40} className="object-contain" priority />
-          <div className="flex items-center gap-1.5">
-            <span className="text-2xl font-bold text-emerald-600">Dari</span>
-            <span className="text-lg text-gray-400 font-light">داري</span>
-          </div>
+        <Link href="/" className="flex items-center gap-2">
+          <span className="text-2xl font-bold text-emerald-600">Dari</span>
+          <span className="text-lg text-gray-400 font-light">داري</span>
         </Link>
 
         {/* Desktop nav */}
